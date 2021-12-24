@@ -1,0 +1,230 @@
+* p {
+  margin: 0;
+}
+
+* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Arial";
+  line-height: 20px;
+}
+
+header {
+  position: relative;
+  background: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 150px 20px;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    padding: 100px 20px;
+  }
+}
+
+header .header__content {
+  position: relative;
+}
+
+header .header__content .header__logo {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 575px) {
+  header .header__content .header__logo {
+    width: 270px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .header__content .header__logo {
+    width: 250px;
+  }
+}
+
+header .header__content .header__info {
+  text-align: center;
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  header .header__content .header__info {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .header__content .header__info {
+    font-size: 16px;
+  }
+}
+
+header .header__content .header__button {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+header .header__content .header__button p {
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+header .header__content .header__button button {
+  border: none;
+  background: #99b800;
+  color: #ffffff;
+  padding: 15px 35px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+header .header__content .header__socialmedia .h__sm__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.tratamientos {
+  position: relative;
+  padding: 100px 20px;
+}
+
+.tratamientos .tratamiento__info h1 {
+  color: #1e1354;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.tratamientos .tratamiento__info p {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.tratamientos .tratamiento__info ul {
+  width: 250px;
+  margin: auto;
+}
+
+.tratamientos .tratamiento__info ul li {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+.tratamientos .tratamiento__info ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("../images/check.png");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+.mapa {
+  position: relative;
+  padding: 100px 20px;
+  background: #99b800;
+}
+
+.mapa h2 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.mapa .mapa__huacho {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.mapa .mapa__huacho iframe {
+  width: 100%;
+}
+
+.socialMedia {
+  position: relative;
+  padding: 100px 20px;
+}
+
+.socialMedia .header__button {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.socialMedia .header__button p {
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.socialMedia .header__button button {
+  border: none;
+  background: #1e1354;
+  color: #ffffff;
+  padding: 15px 35px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.socialMedia .header__socialmedia .h__sm__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #1e1354;
+  color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=style.css.map */

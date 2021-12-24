@@ -1,0 +1,211 @@
+$black: #000000;
+$green: #99b800;
+$purple: #1e1354;
+$orange: #f69918;
+$white: #ffffff;
+
+* p {
+    margin: 0;
+}
+
+* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: "Arial";
+    line-height: 20px;
+}
+
+header {
+    position: relative;
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 150px 20px;
+
+    @media screen and (max-width: 767px) {
+        padding: 100px 20px;
+    }
+
+    .header__content {
+        position: relative;
+
+        .header__logo {
+            width: 300px;
+            margin: auto;
+            margin-bottom: 100px;
+
+            @media screen and (max-width: 575px) {
+                width: 270px;
+                margin-bottom: 50px;
+            }
+
+            @media screen and (max-width: 400px) {
+                width: 250px;
+            }
+        }
+
+        .header__info {
+            text-align: center;
+            color: $black;
+            font-weight: 500;
+            margin-bottom: 60px;
+            font-size: 20px;
+
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+            }
+
+            @media screen and (max-width: 400px) {
+                font-size: 16px;
+            }
+        }
+
+        .header__button {
+            text-align: center;
+            margin-bottom: 60px;
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 10px;
+            }
+
+            button {
+                border: none;
+                background: $green;
+                color: $white;
+                padding: 15px 35px;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+        }
+
+        .header__socialmedia {
+            .h__sm__ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                column-gap: 50px;
+            }
+        }
+    }
+}
+
+.tratamientos {
+    position: relative;
+    padding: 100px 20px;
+
+    .tratamiento__info {
+        h1 {
+            color: $purple;
+            text-align: center;
+            font-weight: bolder;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        ul {
+            width: 250px;
+            margin: auto;
+
+            li {
+                position: relative;
+                margin-bottom: 20px;
+                padding-left: 40px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: url("../images/check.png");
+                    background-size: cover;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.mapa {
+    position: relative;
+    padding: 100px 20px;
+    background: $green;
+
+    h2 {
+        text-align: center;
+        color: $white;
+        font-weight: bolder;
+        margin-bottom: 30px;
+    }
+
+    .mapa__huacho {
+        overflow: hidden;
+        border-radius: 10px;
+
+        iframe {
+            width: 100%;
+        }
+    }
+}
+
+.socialMedia {
+    position: relative;
+    padding: 100px 20px;
+
+    .header__button {
+        text-align: center;
+        margin-bottom: 60px;
+
+        p {
+            font-weight: bolder;
+            margin-bottom: 10px;
+        }
+
+        button {
+            border: none;
+            background: $purple;
+            color: $white;
+            padding: 15px 35px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    }
+
+    .header__socialmedia {
+        .h__sm__ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            column-gap: 50px;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: $purple;
+    color: $white;
+
+    a {
+        text-decoration: none;
+        color: $white;
+        font-weight: bolder;
+    }
+}
