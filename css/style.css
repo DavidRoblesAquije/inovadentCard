@@ -13,6 +13,11 @@
   text-decoration: none;
 }
 
+* a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 img {
   width: 100%;
 }
@@ -57,10 +62,16 @@ nav {
 nav li {
   margin-left: 10px;
   margin-right: 10px;
+  border: 2px solid #1e1354;
+  padding: 5px 10px;
+  border-radius: 15px;
+  width: 145px;
+  text-align: center;
+  background: #1e1354;
 }
 
 nav li a {
-  color: #1e1354;
+  color: #ffffff;
   font-weight: bolder;
 }
 

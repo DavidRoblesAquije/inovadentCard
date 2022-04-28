@@ -19,6 +19,11 @@ $white: #ffffff;
     text-decoration: none;
 }
 
+* a:hover{
+    color: $white;
+    text-decoration: none;
+}
+
 img {
     width: 100%;
 }
@@ -56,9 +61,15 @@ nav {
     li {
         margin-left: 10px;
         margin-right: 10px;
+        border: 2px solid $purple;
+        padding: 5px 10px;
+        border-radius: 15px;
+        width: 145px;
+        text-align: center;
+        background: $purple;
 
-        a{
-            color: $purple;
+        a {
+            color: $white;
             font-weight: bolder;
         }
     }
