@@ -312,6 +312,28 @@ header .box span:nth-child(3) {
   height: 20px;
 }
 
+.ubicaciones_mapa {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 48% 48%;
+      grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+  text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+  .ubicaciones_mapa {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-column-gap: inherit;
+    text-align: inherit;
+    margin-top: 50px;
+  }
+  .ubicaciones_mapa .lima_mapa {
+    margin-top: 50px;
+  }
+}
+
 .mapa {
   position: relative;
   padding: 100px 20px;
@@ -322,6 +344,11 @@ header .box span:nth-child(3) {
   text-align: center;
   color: #ffffff;
   font-weight: bolder;
+}
+
+.mapa h3 {
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .mapa .mapa__text {

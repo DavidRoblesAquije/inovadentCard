@@ -269,6 +269,25 @@ header {
     }
 }
 
+.ubicaciones_mapa{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+    text-align: center;
+
+
+    @media screen and (max-width:575px) {
+        grid-template-columns: 100%;
+        grid-column-gap: inherit;
+        text-align: inherit;
+        margin-top: 50px;
+
+        .lima_mapa{
+            margin-top: 50px;
+        }
+    }
+}
+
 .mapa {
     position: relative;
     padding: 100px 20px;
@@ -278,6 +297,11 @@ header {
         text-align: center;
         color: $white;
         font-weight: bolder;
+    }
+
+    h3{
+        color: $white;
+        text-transform: uppercase;
     }
 
     .mapa__text {
