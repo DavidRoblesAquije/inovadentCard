@@ -206,8 +206,8 @@ header .header__content .header__socialmedia .h__sm__ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
+  -webkit-column-gap: 35px;
+          column-gap: 35px;
 }
 
 header .box {
@@ -404,8 +404,8 @@ header .box span:nth-child(3) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
+  -webkit-column-gap: 35px;
+          column-gap: 35px;
 }
 
 footer {
