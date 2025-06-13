@@ -19,7 +19,7 @@ $white: #ffffff;
     text-decoration: none;
 }
 
-* a:hover{
+* a:hover {
     color: $white;
     text-decoration: none;
 }
@@ -173,6 +173,11 @@ header {
                 padding: 15px 35px;
                 border-radius: 10px;
                 font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 10px;
+                margin: auto;
             }
         }
 
@@ -217,9 +222,11 @@ header {
                 opacity: 0;
                 transform: rotate(45deg) translate(-20px, -20px);
             }
+
             50% {
                 opacity: 1;
             }
+
             100% {
                 opacity: 1;
                 transform: rotate(45deg) translate(20px, 20px);
@@ -269,7 +276,7 @@ header {
     }
 }
 
-.ubicaciones_mapa{
+.ubicaciones_mapa {
     display: grid;
     grid-template-columns: 48% 48%;
     grid-column-gap: 4%;
@@ -282,7 +289,7 @@ header {
         text-align: inherit;
         margin-top: 50px;
 
-        .lima_mapa{
+        .lima_mapa {
             margin-top: 50px;
         }
     }
@@ -299,7 +306,7 @@ header {
         font-weight: bolder;
     }
 
-    h3{
+    h3 {
         color: $white;
         text-transform: uppercase;
     }
@@ -340,6 +347,11 @@ header {
             padding: 15px 35px;
             border-radius: 10px;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            margin: auto;
         }
     }
 
