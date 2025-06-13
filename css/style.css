@@ -48,11 +48,11 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   width: 100%;
   z-index: 1;
@@ -83,11 +83,11 @@ nav li a {
   display: none;
   cursor: pointer;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .menu span {
@@ -190,6 +190,15 @@ header .header__content .header__button button {
   padding: 15px 35px;
   border-radius: 10px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  margin: auto;
+}
+
+header .header__content .header__button button img {
+  filter: brightness(0) invert(1);
 }
 
 header .header__content .header__socialmedia .h__sm__ul {
@@ -198,16 +207,16 @@ header .header__content .header__socialmedia .h__sm__ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-column-gap: 35px;
-          column-gap: 35px;
+  column-gap: 35px;
 }
 
 header .box {
@@ -215,7 +224,7 @@ header .box {
   bottom: 50px;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
 }
 
 header .box span {
@@ -225,35 +234,37 @@ header .box span {
   border-bottom: 3px solid #f69918;
   border-right: 3px solid #f69918;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   margin: -10px;
   -webkit-animation: animate 2s infinite;
-          animation: animate 2s infinite;
+  animation: animate 2s infinite;
 }
 
 header .box span:nth-child(2) {
   -webkit-animation-delay: -0.2s;
-          animation-delay: -0.2s;
+  animation-delay: -0.2s;
 }
 
 header .box span:nth-child(3) {
   -webkit-animation-delay: -0.4s;
-          animation-delay: -0.4s;
+  animation-delay: -0.4s;
 }
 
 @-webkit-keyframes animate {
   0% {
     opacity: 0;
     -webkit-transform: rotate(45deg) translate(-20px, -20px);
-            transform: rotate(45deg) translate(-20px, -20px);
+    transform: rotate(45deg) translate(-20px, -20px);
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 1;
     -webkit-transform: rotate(45deg) translate(20px, 20px);
-            transform: rotate(45deg) translate(20px, 20px);
+    transform: rotate(45deg) translate(20px, 20px);
   }
 }
 
@@ -261,15 +272,17 @@ header .box span:nth-child(3) {
   0% {
     opacity: 0;
     -webkit-transform: rotate(45deg) translate(-20px, -20px);
-            transform: rotate(45deg) translate(-20px, -20px);
+    transform: rotate(45deg) translate(-20px, -20px);
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 1;
     -webkit-transform: rotate(45deg) translate(20px, 20px);
-            transform: rotate(45deg) translate(20px, 20px);
+    transform: rotate(45deg) translate(20px, 20px);
   }
 }
 
@@ -316,7 +329,7 @@ header .box span:nth-child(3) {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 48% 48%;
-      grid-template-columns: 48% 48%;
+  grid-template-columns: 48% 48%;
   grid-column-gap: 4%;
   text-align: center;
 }
@@ -324,11 +337,12 @@ header .box span:nth-child(3) {
 @media screen and (max-width: 575px) {
   .ubicaciones_mapa {
     -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+    grid-template-columns: 100%;
     grid-column-gap: inherit;
     text-align: inherit;
     margin-top: 50px;
   }
+
   .ubicaciones_mapa .lima_mapa {
     margin-top: 50px;
   }
@@ -388,6 +402,15 @@ header .box span:nth-child(3) {
   padding: 15px 35px;
   border-radius: 10px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  margin: auto;
+}
+
+.socialMedia .header__button button img {
+  filter: brightness(0) invert(1);
 }
 
 .socialMedia .header__socialmedia .h__sm__ul {
@@ -396,16 +419,16 @@ header .box span:nth-child(3) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-column-gap: 35px;
-          column-gap: 35px;
+  column-gap: 35px;
 }
 
 footer {
@@ -425,14 +448,14 @@ footer a {
   position: fixed;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   background-color: #ffffff;
   padding: 50px 20px;
   margin: 20px;
   border-radius: 30px;
   -webkit-box-shadow: 0px 0px 15px #000;
-          box-shadow: 0px 0px 15px #000;
+  box-shadow: 0px 0px 15px #000;
   z-index: 10;
   display: none;
 }
@@ -454,11 +477,11 @@ footer a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -480,7 +503,7 @@ footer a {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
 }
 
 .popup_tratamiento .info_tratamiento_off {
@@ -490,4 +513,5 @@ footer a {
 .popup_tratamiento .info_tratamiento_on {
   display: block !important;
 }
+
 /*# sourceMappingURL=style.css.map */
